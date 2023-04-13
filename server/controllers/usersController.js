@@ -60,7 +60,23 @@ const verifyUser = async(req, res) => {
     }
 };
 
+const getUser = (req, res, next) => {
+    const userId = req.params._id;
+    console.log(userId);
+    User.findById(userId)
+        .then((user) => {
+            if (!user) {
+                return res.status(404).json({ message: "User not found" });
+            }
+            res.status(200).json({ user });
+        })
+        .catch((err) => {
+            res.status(500).json({ message: "Fetching user failed" });
+        });
+};
+
 module.exports = {
     createUser,
     verifyUser,
+    getUser
 };

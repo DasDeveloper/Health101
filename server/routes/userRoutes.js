@@ -7,6 +7,9 @@ router
     .route("/")
     .get(usersControllers.verifyUser)
     .post(usersControllers.createUser)
+router
+    .route("/:_id")
+    .get(usersControllers.getUser)
 
 
 module.exports = router;
