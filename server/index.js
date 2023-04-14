@@ -14,8 +14,8 @@ dotenv.config();
 //Session length
 const session_length = 1000 * 60 * 60;
 
-//Set proxy
-app.set("trust proxy", 1);
+// //Set proxy
+// app.set("trust proxy", 1);
 
 //MongoDB seission store
 const mongoDBstore = new MongoDBStore({
@@ -40,7 +40,7 @@ app.use(
 
 app.use(
     cors({
-        origin: "https://localhost:9000",
+        origin: "http://localhost:3000",
         credentials: true,
     })
 );
@@ -64,6 +64,7 @@ const dbConnect = async() => {
 app.get("/", (req, res) => {
 res.send("Hello World!");
 });
+
 //Routes for our API endpoints
 app.use("/users", require("./routes/userRoutes.js"));
 app.use("/session", require("./routes/sessionRoutes.js"));

@@ -5,7 +5,7 @@ const Food = require('../models/food.js')
 router.get("/:foodName", async (req, res) =>{
 
     const foodName = req.params.foodName;
-    const food = await Food.findOne({name:foodName}).then( food =>{
+    const food = await Food.find({name:foodName}).then( food =>{
         if(food){
             res.json(food);
         }
