@@ -1,11 +1,13 @@
 import axios from 'axios'
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "../css/searchFood.css"
 
 const SearchFood = () =>{
     
 
-   
+//    useEffect(() =>{
+//         getFood();
+//    }, [food])
     
     const [food, setFood] = useState([]);
     const [result, setResult] = useState([]);
@@ -22,9 +24,8 @@ const SearchFood = () =>{
         <div>
             <div>
                 
-                <label for="search">Search a food</label>
                 <input className="searchBar" type="text" id="search" name="search" placeholder="Search..." onChange={e => setFood(e.target.value)}></input>
-                <button onClick={getFood}>Find</button>
+                <button className="searchButton" onClick={getFood}>Find</button>
             </div>
 
             <div>
@@ -44,13 +45,9 @@ const SearchFood = () =>{
                         
                     ))}
                     </div>):
-                    (<div>No results found</div>)}
+                    (<></>)}
 
                 </div>
-
-                
-
-
 
             </div>
 

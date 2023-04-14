@@ -1,11 +1,24 @@
 .searchBar {
     width: 500px;
+    height: 50px;
     border: 1px gray solid;
     border-radius: 10px;
-    background-color: white;
+    background-color: lightgray;
     margin: auto;
+    font-size: large;
+    position:relative;
+    top:20px;
+    left: 675px;
+}
 
-
+.searchButton {
+    position:relative;
+    top:20px;
+    left: 675px;
+    height: 50px;
+    width: 75px;
+    margin-left: 10px;
+    border-radius: 10px;
 }
 
 .resultDetails{

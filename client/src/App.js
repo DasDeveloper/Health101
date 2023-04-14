@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import UserSession from "./UserSession";
 import Navbar from "./components/navbar";
 import SearchFood from "./components/searchFood";
-
+import Footer from "./components/footer";
 
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
             path="/searchfood"
             element={
               <>
-                <Navbar /> <SearchFood/>
+                <Navbar /> <SearchFood/> <Footer/>
               </>
             }
           ></Route>
