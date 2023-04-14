@@ -2,6 +2,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import UserSession from "./UserSession";
 import Navbar from "./components/navbar";
+import SearchFood from "./components/searchFood";
+
 
 
 function App() {
@@ -15,7 +17,7 @@ function App() {
             path="/searchfood"
             element={
               <>
-                <Navbar /> 
+                <Navbar /> <SearchFood/>
               </>
             }
           ></Route>
