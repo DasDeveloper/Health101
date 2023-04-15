@@ -1,20 +1,13 @@
 .searchBar {
-    width: 500px;
     height: 50px;
     border: 1px gray solid;
     border-radius: 10px;
     background-color: lightgray;
-    margin: auto;
     font-size: large;
-    position:relative;
-    top:20px;
-    left: 675px;
+    margin: 25px;
 }
 
 .searchButton {
-    position:relative;
-    top:20px;
-    left: 675px;
     height: 50px;
     width: 75px;
     margin-left: 10px;
@@ -23,11 +16,9 @@
 
 .resultDetails{
     border: 1px white solid;
-    width: 500px;
+    width: 100%;
     border-radius: 10px;
     height: max-content;
-    margin: 50px;
-    margin-left: 100px;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 7px 0px;
 
 }

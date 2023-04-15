@@ -5,9 +5,6 @@ import "../css/searchFood.css"
 const SearchFood = () =>{
     
 
-//    useEffect(() =>{
-//         getFood();
-//    }, [food])
     
     const [food, setFood] = useState([]);
     const [result, setResult] = useState([]);
@@ -31,12 +28,12 @@ const SearchFood = () =>{
             <div>
                 Results:
 
-                <div className="resultDetails">
+                <div>
 
                     {result.length!=0 ? (<div>
                         {result.map(el =>(
                             
-                        <div>
+                        <div className="resultDetails">
                             <h3>Name: {el.name}</h3>
                             <h3>Calories: {el.calories}</h3>
                             <h3>Serving: {el.serving} units</h3>
