@@ -26,7 +26,7 @@ const SearchFood = () =>{
             </div>
 
             <div>
-                Results:
+                
 
                 <div>
 
@@ -37,12 +37,12 @@ const SearchFood = () =>{
                             <h3>Name: {el.name}</h3>
                             <h3>Calories: {el.calories}</h3>
                             <h3>Serving: {el.serving} units</h3>
-                            <button>Add to daily calories</button>
+                            <button>+</button>
                         </div>
                         
                     ))}
                     </div>):
-                    (<></>)}
+                    (<>No results found</>)}
 
                 </div>
 

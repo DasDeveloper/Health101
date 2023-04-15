@@ -1,7 +1,7 @@
 .navbar{
     height: 75px;
     width: 100%;
-    background-color: greenyellow;
+    background: rgba(198, 232, 128, 1);
     text-align: center;
     margin-top:none;
 }
