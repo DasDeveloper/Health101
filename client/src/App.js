@@ -4,6 +4,7 @@ import UserSession from "./UserSession";
 import Navbar from "./components/navbar";
 import SearchFood from "./components/searchFood";
 import Footer from "./components/footer";
+import Settings from "./components/settings";
 
 
 function App() {
@@ -18,6 +19,14 @@ function App() {
             element={
               <>
                 <Navbar /> <SearchFood/> <Footer/>
+              </>
+            }
+          ></Route>
+          <Route
+            path="/settings"
+            element={
+              <>
+                <Navbar /> <Settings/> <Footer/>
               </>
             }
           ></Route>
