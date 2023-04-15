@@ -1,6 +1,10 @@
 .navbar{
     height: 75px;
-    background-color: greenyellow;
+    width: 100%;
+    background: rgba(198, 232, 128, 1);
     text-align: center;
     margin-top:none;
+}
+.navbar h1{
+    margin: 0px;
 }
