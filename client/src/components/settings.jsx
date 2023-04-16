@@ -5,7 +5,7 @@ const Settings = () =>{
     return (
         <div>
 
-            <div className="accountIcon"><AccountCircleIcon></AccountCircleIcon></div>
+            <div className="iconContainer"><AccountCircleIcon className="accountIcon" fontSize="large"></AccountCircleIcon></div>
             <button className="change">Change your username</button>
             <button className="change">Change your password</button>
             <button className="change">Change your minimum calories intake</button>

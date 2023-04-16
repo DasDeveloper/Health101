@@ -1,20 +1,26 @@
 .accountIcon{
-    margin-left: 200px;
-    transform: scale(2.8);
-
-    margin-bottom: 20px;
-    margin-top: 30px;
-    
+    transform: scale(5);
+    margin: auto;
 }
 
 .change{
     border: 1px white solid;
     width: 95%;
+    font-size: large;
+    
     border-radius: 10px;
     margin:auto;
     margin-top: 10px;
     margin-bottom: 10px;
-    height: max-content;
+    margin-left: 10px;
+    height: 50px;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 7px 0px;
     text-align: center;
+}
+.iconContainer{
+    margin: auto;
+    margin-left: 180px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+
 }
