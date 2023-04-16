@@ -9,6 +9,7 @@ import Settings from "./components/settings";
 import ChangePassword from "./components/changePassword";
 import ChangeUsername from "./components/changeUsername";
 import StatisticsPage from "./components/statisticsPage";
+import ChangeMinimumCalories from "./components/changeMinimumCalories";
 
 
 
@@ -69,6 +70,15 @@ function App() {
             element={
               <>
                 <StatisticsPage/>
+              </>
+            }
+          ></Route>
+
+          <Route
+            path="/changeminimumcalories"
+            element={
+              <>
+                <Navbar/><ChangeMinimumCalories/><Footer/>
               </>
             }
           ></Route>
