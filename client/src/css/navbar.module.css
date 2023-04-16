@@ -1,0 +1,9 @@
+.navbar{
+  height: 70px;
+  width: 100%;
+  background: rgba(198, 232, 128, 1);
+  text-align: center;
+  margin-top:none;
+  margin: 0px;
+  padding-top: 20px;
+}

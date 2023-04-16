@@ -4,9 +4,11 @@ import UserSession from "./UserSession";
 import Navbar from "./components/navbar";
 import SearchFood from "./components/searchFood";
 import Footer from "./components/footer";
+import HomePage from "./components/homePage";
 import Settings from "./components/settings";
 import ChangePassword from "./components/changePassword";
 import ChangeUsername from "./components/changeUsername";
+
 
 
 function App() {
@@ -24,6 +26,16 @@ function App() {
               </>
             }
           ></Route>
+
+          <Route
+            path="/"
+            element={
+              <>
+                <HomePage/> 
+              </>
+            }
+          ></Route>
+          
           <Route
             path="/settings"
             element={
@@ -32,6 +44,7 @@ function App() {
               </>
             }
           ></Route>
+          
           <Route
             path="/changepassword"
             element={
@@ -40,6 +53,7 @@ function App() {
               </>
             }
           ></Route>
+          
           <Route
             path="/changeusername"
             element={
