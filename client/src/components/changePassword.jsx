@@ -5,16 +5,16 @@ const ChangePassword = () =>{
     return(
         <div className="password">
 
-            <p className="title">Change your password</p>
+            <p className="title"><h3>Change your password</h3></p>
             <br/>
 
             <p><b>New password:</b></p>
             <br/>
-            <input></input>
+            <input placeholder="New password"></input>
             <br/>
             <p><b>Confirm new password:</b></p>
             <br/>
-            <input></input>
+            <input placeholder="Confirm new password"></input>
             <br/>
             <button>Confirm</button>
             
