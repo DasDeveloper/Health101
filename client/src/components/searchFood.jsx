@@ -1,6 +1,7 @@
 import axios from 'axios'
 import { useEffect, useState } from "react";
 import "../css/searchFood.css"
+import SearchIcon from '@mui/icons-material/Search';
 
 const SearchFood = () =>{
   const [food, setFood] = useState([]);
@@ -14,8 +15,10 @@ const SearchFood = () =>{
 
   return (
     <div>
-      <div>           
-        <input className="searchBar" type="text" id="search" name="search" placeholder="Search..." onChange={e => setFood(e.target.value)}></input>
+      <div className="top">           
+        <input className="searchBar" type="text" id="search" name="search" placeholder="Search..." onChange={e => setFood(e.target.value)}>
+        
+        </input>
         <button className="searchButton" onClick={getFood}>Find</button>
       </div>
 
