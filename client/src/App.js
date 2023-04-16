@@ -8,6 +8,7 @@ import HomePage from "./components/homePage";
 import Settings from "./components/settings";
 import ChangePassword from "./components/changePassword";
 import ChangeUsername from "./components/changeUsername";
+import StatisticsPage from "./components/statisticsPage";
 
 
 
@@ -59,6 +60,15 @@ function App() {
             element={
               <>
                 <Navbar /> <ChangeUsername/> <Footer/>
+              </>
+            }
+          ></Route>
+
+          <Route
+            path="/statistics"
+            element={
+              <>
+                <StatisticsPage/>
               </>
             }
           ></Route>
