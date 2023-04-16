@@ -31,11 +31,11 @@ const SearchFood = () =>{
                   <h3>Name: {el.name}</h3>
                   <h3>Calories: {el.calories}</h3>
                   <h3>Serving: {el.serving} units</h3>
-                  <button>+</button>
+                  <button>Add</button>
               </div> 
               ))}
           </div>):
-          (<>No results found</>)}
+          (<></>)}
         </div> 
       </div>
     </div>
