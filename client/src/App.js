@@ -9,6 +9,7 @@ import Settings from "./components/settings";
 import ChangePassword from "./components/changePassword";
 import ChangeUsername from "./components/changeUsername";
 import StatisticsPage from "./components/statisticsPage";
+import ActivitiesOverview from "./components/ActivitiesOverview";
 
 
 
@@ -69,6 +70,14 @@ function App() {
             element={
               <>
                 <StatisticsPage/>
+              </>
+            }
+          ></Route>
+          <Route
+            path="/activities"
+            element={
+              <>
+                <ActivitiesOverview/>
               </>
             }
           ></Route>
