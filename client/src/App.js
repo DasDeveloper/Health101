@@ -10,6 +10,7 @@ import ChangePassword from "./components/changePassword";
 import ChangeUsername from "./components/changeUsername";
 import StatisticsPage from "./components/statisticsPage";
 import ActivitiesOverview from "./components/ActivitiesOverview";
+import AddActivities from "./components/AddActivities";
 
 
 
@@ -78,6 +79,14 @@ function App() {
             element={
               <>
                 <ActivitiesOverview/>
+              </>
+            }
+          ></Route>
+          <Route
+            path="/activities/add"
+            element={
+              <>
+                <AddActivities/>
               </>
             }
           ></Route>
