@@ -11,6 +11,7 @@ import ChangeUsername from "./components/changeUsername";
 import StatisticsPage from "./components/statisticsPage";
 import ActivitiesOverview from "./components/ActivitiesOverview";
 import AddActivities from "./components/AddActivities";
+import AddCustomActivity from "./components/AddCustomActivity";
 
 
 
@@ -87,6 +88,14 @@ function App() {
             element={
               <>
                 <AddActivities/>
+              </>
+            }
+          ></Route>
+          <Route
+            path="/activities/add/custom"
+            element={
+              <>
+                <AddCustomActivity/>
               </>
             }
           ></Route>
