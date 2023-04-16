@@ -4,6 +4,7 @@ import UserSession from "./UserSession";
 import Navbar from "./components/navbar";
 import SearchFood from "./components/searchFood";
 import Footer from "./components/footer";
+import HomePage from "./components/homePage";
 
 
 function App() {
@@ -18,6 +19,15 @@ function App() {
             element={
               <>
                 <Navbar /> <SearchFood/> <Footer/>
+              </>
+            }
+          ></Route>
+
+          <Route
+            path="/"
+            element={
+              <>
+                <HomePage/> 
               </>
             }
           ></Route>
