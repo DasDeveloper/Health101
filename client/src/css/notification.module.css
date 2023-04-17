@@ -22,7 +22,7 @@
 
 .text fieldset {
   border-radius: 20px;
-  background-color: lightgray;
+  background-color: rgb(231, 231, 231);
   z-index: -1;
   width: 300px;
 }
