@@ -9,6 +9,7 @@ import ChangePassword from "./components/changePassword";
 import ChangeUsername from "./components/changeUsername";
 import StatisticsPage from "./components/statisticsPage";
 import RewardsPage from "./components/rewards";
+import NotificationPage from "./components/notification";
 
 function App() {
   return (
@@ -75,6 +76,15 @@ function App() {
             element={
               <>
                 <RewardsPage />
+              </>
+            }
+          ></Route>
+
+          <Route
+            path="/notification"
+            element={
+              <>
+                <NotificationPage />
               </>
             }
           ></Route>

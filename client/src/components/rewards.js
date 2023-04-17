@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import Navbar from "./navbar";
 import Footer from "./footer";
 import RewardsCSS from "../css/rewards.module.css";

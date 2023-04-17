@@ -1,0 +1,28 @@
+.body {
+  min-height: 100vh;
+}
+
+.container {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+}
+
+.text {
+  padding: 10px;
+  width: 70%;
+}
+
+.text p {
+  margin-bottom: 50px;
+  margin-left: 25px;
+}
+
+.text fieldset {
+  border-radius: 20px;
+  background-color: lightgray;
+  z-index: -1;
+}
