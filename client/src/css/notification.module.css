@@ -3,7 +3,7 @@
 }
 
 .container {
-  margin-top: 150px;
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -13,16 +13,64 @@
 
 .text {
   padding: 10px;
-  width: 70%;
+  width: 80%;
 }
 
 .text p {
-  margin-bottom: 50px;
-  margin-left: 25px;
+  margin-bottom: 70px;
 }
 
 .text fieldset {
   border-radius: 20px;
   background-color: lightgray;
   z-index: -1;
+  width: 300px;
+}
+
+.bottom {
+  margin-top: 10%;
+  display: grid;
+  grid-template-areas: "left . right";
+  gap: 10px;
+}
+
+.bottom-left {
+  grid-area: left;
+}
+
+.bottom .right {
+  grid-area: right;
+}
+
+.bottom .left,
+.bottom .right {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+  max-width: 300px;
+  padding: 7px;
+  font-size: larger;
+}
+
+.button {
+  /* width: clamp(10%, 20%, 20%); */
+  background: linear-gradient(320deg, rgba(255, 255, 255, 1) 0%, rgba(174, 239, 151, 1) 50%, rgba(198, 232, 128, 1) 100%);
+  border-radius: 20px;
+  border-style: none;
+  transition: 0.3s;
+  min-width: calc(100px + 1vw);
+}
+
+.button#back {
+  background: linear-gradient(320deg, rgba(255, 164, 164, 1) 0%, rgba(239, 151, 151, 1) 25%, rgba(249, 0, 0, 1) 100%);
+}
+
+.button#back:hover {
+  background: linear-gradient(320deg, rgba(255, 113, 113, 1) 0%, rgba(247, 62, 62, 1) 25%, rgba(149, 0, 0, 1) 100%);
+}
+
+.button:hover {
+  background: linear-gradient(320deg, rgba(182, 255, 159, 1) 0%, rgba(89, 237, 37, 1) 50%, rgba(0, 136, 15, 1) 100%);
 }
