@@ -10,6 +10,9 @@ import ChangeUsername from "./components/changeUsername";
 import StatisticsPage from "./components/statisticsPage";
 import RewardsPage from "./components/rewards";
 import NotificationPage from "./components/notification";
+import ActivitiesOverview from "./components/ActivitiesOverview";
+import AddActivities from "./components/AddActivities";
+import AddCustomActivity from "./components/AddCustomActivity";
 
 function App() {
   return (
@@ -85,6 +88,30 @@ function App() {
             element={
               <>
                 <NotificationPage />
+              </>
+            }
+          ></Route>
+          <Route
+            path="/activities"
+            element={
+              <>
+                <ActivitiesOverview />
+              </>
+            }
+          ></Route>
+          <Route
+            path="/activities/add"
+            element={
+              <>
+                <AddActivities />
+              </>
+            }
+          ></Route>
+          <Route
+            path="/activities/add/custom"
+            element={
+              <>
+                <AddCustomActivity />
               </>
             }
           ></Route>
