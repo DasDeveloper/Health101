@@ -13,6 +13,7 @@ import NotificationPage from "./components/notification";
 import ActivitiesOverview from "./components/ActivitiesOverview";
 import AddActivities from "./components/AddActivities";
 import AddCustomActivity from "./components/AddCustomActivity";
+import DietSearchPage from "./components/dietSearch";
 
 function App() {
   return (
@@ -112,6 +113,14 @@ function App() {
             element={
               <>
                 <AddCustomActivity />
+              </>
+            }
+          ></Route>
+          <Route
+            path="/dietsearch"
+            element={
+              <>
+                <DietSearchPage />
               </>
             }
           ></Route>

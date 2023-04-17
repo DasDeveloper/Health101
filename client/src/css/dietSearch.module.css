@@ -1,0 +1,33 @@
+.body {
+  min-height: 100vh;
+}
+
+.container {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+}
+
+.text {
+  padding: 10px;
+  width: 80%;
+}
+
+.text p {
+  margin-bottom: 70px;
+}
+
+.text fieldset {
+  border-radius: 20px;
+  background-color: white;
+  z-index: -1;
+  width: 300px;
+}
+
+.slideshow-section1 img {
+  width: 50px;
+  height: 50px;
+}
