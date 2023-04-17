@@ -10,7 +10,6 @@ import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
 const CustomFood = () => {
 
-  const [sent, setSent] = useState(false)
   const [customProduct, setCustomProduct] = useState({
     calorie: "",
     name: "",

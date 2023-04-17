@@ -74,6 +74,24 @@ function App() {
               </>
             }
           ></Route>
+          
+          <Route
+            path="/customFood"
+            element={
+              <>
+                <CustomFood/>
+              </>
+            }
+          ></Route>
+
+           <Route
+            path="/changeminimumcalories"
+            element={
+              <>
+                <Navbar/><ChangeMinimumCalories/><Footer/>
+              </>
+            }
+          ></Route>
         </Routes>
       </BrowserRouter>
     </UserSession>
