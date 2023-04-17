@@ -9,6 +9,7 @@ import Settings from "./components/settings";
 import ChangePassword from "./components/changePassword";
 import ChangeUsername from "./components/changeUsername";
 import StatisticsPage from "./components/statisticsPage";
+import ChangeMinimumCalories from "./components/changeMinimumCalories";
 import CustomFood from "./components/customFood";
 
 
@@ -70,15 +71,6 @@ function App() {
             element={
               <>
                 <StatisticsPage/>
-              </>
-            }
-          ></Route>
-
-          <Route
-            path="/customFood"
-            element={
-              <>
-                <CustomFood/>
               </>
             }
           ></Route>
