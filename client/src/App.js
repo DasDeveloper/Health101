@@ -9,6 +9,9 @@ import Settings from "./components/settings";
 import ChangePassword from "./components/changePassword";
 import ChangeUsername from "./components/changeUsername";
 import StatisticsPage from "./components/statisticsPage";
+import ActivitiesOverview from "./components/ActivitiesOverview";
+import AddActivities from "./components/AddActivities";
+import AddCustomActivity from "./components/AddCustomActivity";
 import ChangeMinimumCalories from "./components/changeMinimumCalories";
 import CustomFood from "./components/customFood";
 
@@ -74,7 +77,30 @@ function App() {
               </>
             }
           ></Route>
-          
+          <Route
+            path="/activities"
+            element={
+              <>
+                <ActivitiesOverview/>
+              </>
+            }
+          ></Route>
+          <Route
+            path="/activities/add"
+            element={
+              <>
+                <AddActivities/>
+              </>
+            }
+          ></Route>
+          <Route
+            path="/activities/add/custom"
+            element={
+              <>
+                <AddCustomActivity/>
+              </>
+            }
+          ></Route>
           <Route
             path="/customFood"
             element={
