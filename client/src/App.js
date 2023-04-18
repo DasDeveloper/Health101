@@ -14,6 +14,10 @@ import ActivitiesOverview from "./components/ActivitiesOverview";
 import AddActivities from "./components/AddActivities";
 import AddCustomActivity from "./components/AddCustomActivity";
 import DietSearchPage from "./components/dietSearch";
+import ChangeMinimumCalories from "./components/changeMinimumCalories";
+import CustomFood from "./components/customFood";
+
+
 
 function App() {
   return (
@@ -121,6 +125,23 @@ function App() {
             element={
               <>
                 <DietSearchPage />
+              </>
+            }
+          ></Route>
+          <Route
+            path="/customFood"
+            element={
+              <>
+                <CustomFood/>
+              </>
+            }
+          ></Route>
+
+           <Route
+            path="/changeminimumcalories"
+            element={
+              <>
+                <Navbar/><ChangeMinimumCalories/><Footer/>
               </>
             }
           ></Route>

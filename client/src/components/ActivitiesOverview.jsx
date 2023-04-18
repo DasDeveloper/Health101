@@ -1,7 +1,7 @@
 import Navbar from "./navbar";
 import Footer from "./footer";
 import ActivitiesCSS from "../css/ActivitiesOverview.module.css"
-import { SvgIcon } from "@mui/material";
+import { Link } from "react-router-dom";
 import AddIcon from '@mui/icons-material/Add';
 
 const ActivitiesOverview = () => {
@@ -20,21 +20,25 @@ const ActivitiesOverview = () => {
                     <div className={ActivitiesCSS.bottom}>
                         <div className={ActivitiesCSS.left}>
                             <p>If there's a new activity you would like to add ↓</p>
-                            <button className={ActivitiesCSS["button"]}>
-                                <AddIcon />
-                            </button>
-                            <label>
-                                <b>Add Custom</b>
-                            </label>
+                            <Link to="/activities/add/custom">
+                                <button className={ActivitiesCSS["button"]}>
+                                    <AddIcon />
+                                </button>
+                                <label>
+                                    <b>Add Custom</b>
+                                </label>
+                            </Link> 
                         </div>
                         <div className={ActivitiesCSS.right}>
                             <p>If there are any other activities you have done ↓</p>
-                            <button className={ActivitiesCSS["button"]}>
-                                <AddIcon />
-                            </button>
-                            <label>
-                                <b>Add New Activity</b>
-                            </label>
+                            <Link to="/activities/add">
+                                <button className={ActivitiesCSS["button"]}>
+                                    <AddIcon />
+                                </button>
+                                <label>
+                                    <b>Add New Activity</b>
+                                </label>
+                            </Link>
                         </div>
                     </div>
                 </div>

@@ -44,6 +44,13 @@
     font-size: larger;
 }
 
+a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
 .button {
     width: clamp(20%, 50%, 50%);
     background: linear-gradient(320deg, rgba(255,255,255,1) 0%, rgba(174,239,151,1) 50%, rgba(198,232,128,1) 100%);
