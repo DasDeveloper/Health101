@@ -1,4 +1,3 @@
-
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import UserSession from "./UserSession";
 import Navbar from "./components/navbar";
@@ -9,16 +8,18 @@ import Settings from "./components/settings";
 import ChangePassword from "./components/changePassword";
 import ChangeUsername from "./components/changeUsername";
 import StatisticsPage from "./components/statisticsPage";
+import RewardsPage from "./components/rewards";
+import NotificationPage from "./components/notification";
 import ActivitiesOverview from "./components/ActivitiesOverview";
 import AddActivities from "./components/AddActivities";
 import AddCustomActivity from "./components/AddCustomActivity";
+import DietSearchPage from "./components/dietSearch";
 import ChangeMinimumCalories from "./components/changeMinimumCalories";
 import CustomFood from "./components/customFood";
 
 
 
 function App() {
-
   return (
     <UserSession>
       {/* Link to pages using React Router DOM */}
@@ -28,7 +29,7 @@ function App() {
             path="/searchfood"
             element={
               <>
-                <Navbar /> <SearchFood/> <Footer/>
+                <Navbar /> <SearchFood /> <Footer />
               </>
             }
           ></Route>
@@ -37,34 +38,34 @@ function App() {
             path="/"
             element={
               <>
-                <HomePage/> 
+                <HomePage />
               </>
             }
           ></Route>
-          
+
           <Route
             path="/settings"
             element={
               <>
-                <Navbar /> <Settings/> <Footer/>
+                <Navbar /> <Settings /> <Footer />
               </>
             }
           ></Route>
-          
+
           <Route
             path="/changepassword"
             element={
               <>
-                <Navbar /> <ChangePassword/> <Footer/>
+                <Navbar /> <ChangePassword /> <Footer />
               </>
             }
           ></Route>
-          
+
           <Route
             path="/changeusername"
             element={
               <>
-                <Navbar /> <ChangeUsername/> <Footer/>
+                <Navbar /> <ChangeUsername /> <Footer />
               </>
             }
           ></Route>
@@ -73,7 +74,25 @@ function App() {
             path="/statistics"
             element={
               <>
-                <StatisticsPage/>
+                <StatisticsPage />
+              </>
+            }
+          ></Route>
+
+          <Route
+            path="/rewards"
+            element={
+              <>
+                <RewardsPage />
+              </>
+            }
+          ></Route>
+
+          <Route
+            path="/notification"
+            element={
+              <>
+                <NotificationPage />
               </>
             }
           ></Route>
@@ -81,7 +100,7 @@ function App() {
             path="/activities"
             element={
               <>
-                <ActivitiesOverview/>
+                <ActivitiesOverview />
               </>
             }
           ></Route>
@@ -89,7 +108,7 @@ function App() {
             path="/activities/add"
             element={
               <>
-                <AddActivities/>
+                <AddActivities />
               </>
             }
           ></Route>
@@ -97,7 +116,15 @@ function App() {
             path="/activities/add/custom"
             element={
               <>
-                <AddCustomActivity/>
+                <AddCustomActivity />
+              </>
+            }
+          ></Route>
+          <Route
+            path="/dietsearch"
+            element={
+              <>
+                <DietSearchPage />
               </>
             }
           ></Route>
