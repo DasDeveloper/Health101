@@ -20,6 +20,10 @@ router.post('/foodName', async (req, res) =>{
 
     const {name, calories, serving} = req.body;
 
+    if (!name || ! calories || !serving) {
+        return res.status(400).json({ message: "Please fill out all fields!" });
+    }
+
     const dish = {name:name, calories:calories, serving:serving};
     const newFood = Food.create(dish);
 

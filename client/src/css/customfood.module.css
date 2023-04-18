@@ -1,0 +1,112 @@
+.body {
+  min-height: 100dvh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 660px;
+}
+
+.title {
+  text-align: center;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 80%;
+  height:80%;
+}
+
+.input {
+  height: 50px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+  max-width: 100%;
+  width: 100%;
+  border: none;
+  font-size: large;
+}
+
+.nav {
+  display: flex;
+}
+
+.buttonBack {
+  height: 60px;
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 50px;
+  background: linear-gradient(108.3deg, rgb(202, 73, 118) 15.2%, rgb(255, 84, 84) 99.3%);
+  border-radius: 20px;
+  border-style: none;
+  transition: 0.3s;
+  min-width: calc(100px + 1vw);
+}
+
+.navTitle {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.buttonAdd {
+  height: 60px;
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 50px;
+  background: linear-gradient(320deg, rgba(255,255,255,1) 0%, rgba(174,239,151,1) 50%, rgba(198,232,128,1) 100%);
+  border-radius: 20px;
+  border-style: none;
+  transition: 0.3s;
+  min-width: calc(100px + 1vw);
+  transform: scale();
+}
+
+.weightInput {
+  height: 78px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+  width: 25%;
+  font-size: large;
+  border: none;
+  margin: 0 10px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  transform: scale(1.1);
+}
+
+.increase {
+  border-radius: 20px;
+  width: 60px;
+  background: linear-gradient(320deg, rgba(255,255,255,1) 0%, rgba(174,239,151,1) 50%, rgba(198,232,128,1) 100%);
+  border-style: none;
+  height: 40%;
+}
+
+.decrease {
+  border-radius: 20px;
+  background: linear-gradient(108.3deg, rgb(202, 73, 118) 15.2%, rgb(255, 84, 84) 99.3%);
+  width: 60px;
+  border-style: none;
+  height: 40%;
+}
+
+.serving {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.size {
+  margin-left: 65px;
+}
