@@ -1,0 +1,41 @@
+#testimage {
+  border-radius: 20px;
+}
+
+.body {
+  min-height: 100vh;
+}
+
+.container {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+}
+
+.text {
+  width: 80%;
+  margin-bottom: 10px;
+}
+
+.text fieldset {
+  border-radius: 20px;
+  background-color: white;
+  z-index: -1;
+  width: 300px;
+}
+
+.slideshowSection b {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+  margin-bottom: 10px;
+}
+
+.alice-carousel__dots {
+  margin-top: 0px !important;
+}

@@ -1,0 +1,84 @@
+.body {
+    min-height: 100dvh;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em 0;
+}
+
+.top-card {
+    padding: 10px;
+    width: auto;
+    max-width: 500px;
+    border-style: solid;
+    border-radius: 7px;
+    border-color: black;
+    margin-bottom: 10vh;
+}
+
+.bottom {
+    display: grid;
+    grid-template-areas: "left . right";
+    gap: 10px
+}
+
+.bottom-left {
+    grid-area: left;
+}
+
+.bottom .right {
+    grid-area: right;
+}
+
+.bottom .left, .bottom .right {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    max-width: 300px;
+    padding: 7px;
+    font-size: larger;
+}
+
+a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.button {
+    width: clamp(20%, 50%, 50%);
+    background: linear-gradient(320deg, rgba(255,255,255,1) 0%, rgba(174,239,151,1) 50%, rgba(198,232,128,1) 100%);
+    border-radius: 20px;
+    border-style: none;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: linear-gradient(320deg, rgba(182,255,159,1) 0%, rgba(89,237,37,1) 50%, rgba(0,136,15,1) 100%);
+}
+
+@media screen and (max-width: 600px) {
+    .body {
+        font-size: calc(9px + 1vw);
+    }
+
+    .top-card {
+        margin: 0 20px;
+    }
+
+    .bottom {
+        grid-template-areas: 
+        'left left'
+        'right right';
+    }
+    
+    .top-card {
+        margin-bottom: 5vh;
+    }
+}
