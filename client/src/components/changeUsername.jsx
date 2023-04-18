@@ -1,9 +1,16 @@
 import "../css/changeUsername.css"
-
+import { useNavigate } from "react-router-dom";
 
 const ChangeUsername = () =>{
+
+    const navigate = useNavigate();
+
+    const navigateToSetting = () =>{
+        navigate("/settings")
+    }
     
     return(
+        
         <div className="username">
             
             <p className="title"><h3>Change your username</h3></p>
@@ -13,7 +20,7 @@ const ChangeUsername = () =>{
             <br/>
             <input placeholder="New username"></input>
             <br/>
-            <button>Confirm</button>
+            <button onClick={navigateToSetting}>Confirm</button>
             
         </div>
     )

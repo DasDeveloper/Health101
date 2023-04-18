@@ -1,6 +1,13 @@
+import { useNavigate } from "react-router-dom"
 import "../css/changePassword.css"
 
 const ChangePassword = () =>{
+
+    const navigate = useNavigate();
+
+    const navigateToSetting = () =>{
+        navigate("/settings")
+    }
     
     return(
         <div className="password">
@@ -16,7 +23,7 @@ const ChangePassword = () =>{
             <br/>
             <input placeholder="Confirm new password"></input>
             <br/>
-            <button>Confirm</button>
+            <button onClick={navigateToSetting}>Confirm</button>
             
         </div>
     )

@@ -1,6 +1,13 @@
 import "../css/changeMinimumCalories.css"
-
+import { useNavigate
+ } from "react-router-dom";
 const ChangeMinimumCalories = () =>{
+
+    const navigate = useNavigate();
+
+    const navigateToSetting = () =>{
+        navigate("/settings")
+    }
 
     return (
         <div className="calories">
@@ -11,7 +18,7 @@ const ChangeMinimumCalories = () =>{
             <br/>
             <input placeholder="New minimum calories"></input>
             <br/>
-            <button>Confirm</button>
+            <button onClick={navigateToSetting}>Confirm</button>
         </div>
     );
 }
