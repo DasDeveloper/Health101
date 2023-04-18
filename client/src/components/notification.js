@@ -39,7 +39,7 @@ const NotificationPage = () => {
             <AddIcon fontSize="large" />
           </button>
           <label>
-            <b>Add Activity</b>
+            <b>Save Notification</b>
           </label>
         </div>
       </div>
