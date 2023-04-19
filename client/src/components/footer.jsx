@@ -4,9 +4,11 @@ import HomeIcon from '@mui/icons-material/Home';
 import SettingsIcon from '@mui/icons-material/Settings';
 import { useNavigate } from "react-router-dom";
 
+
 const Footer = () =>{
 
   const navigate = useNavigate();
+
 
   const navigateToAccountPage = () =>{
     navigate("/account")
@@ -18,15 +20,30 @@ const Footer = () =>{
   const navigateToHomePage = () =>{
     navigate("/")
   }
-  //<button className="change" onClick={navigateToAccountPage}></button>
-  //<button className="change" onClick={navigateToSettings}></button>
-  //<button className="change" onClick={navigateToHomePage}></button>
+
+
+  
+  const redirectHomePage = () => {
+    navigate("/");
+  };
+
+  const redirectSettings = () => {
+    navigate("/settings");
+  };
+
+  const redirectAccount = () => {
+    navigate("/changeminimumcalories");
+  };
+
+
+
+
 
   return (
     <div className={FooterCSS.footer}>
-      <AccountCircleIcon className={FooterCSS.icon} fontSize="large"></AccountCircleIcon>
-      <HomeIcon className={FooterCSS.icon} fontSize="large"></HomeIcon>
-      <SettingsIcon className={FooterCSS.icon} fontSize="large"></SettingsIcon>
+      <AccountCircleIcon className={FooterCSS.icon} fontSize="large" onClick={redirectAccount}></AccountCircleIcon>
+      <HomeIcon className={FooterCSS.icon} fontSize="large" onClick={redirectHomePage}></HomeIcon>
+      <SettingsIcon className={FooterCSS.icon} fontSize="large" onClick={redirectSettings}></SettingsIcon>
     </div>
   );
 }
