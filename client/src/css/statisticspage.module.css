@@ -1,0 +1,29 @@
+.body {
+  min-height: 100dvh;
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.image {
+  width: 80%;
+  height: auto;
+  transform: scale(1.1);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 600px;
+}
+
+.text {
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px black;
+  border-radius: 30px;
+}
