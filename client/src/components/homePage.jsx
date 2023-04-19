@@ -6,8 +6,29 @@ import BarChartIcon from '@mui/icons-material/BarChart';
 import FitnessCenterIcon from '@mui/icons-material/FitnessCenter';
 import RamenDiningIcon from '@mui/icons-material/RamenDining';
 import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
+import { useNavigate } from "react-router-dom";
 
 const HomePage = () => {
+
+  const navigate = useNavigate();
+  
+  const redirectStats = () => {
+    navigate("/statistics");
+  };
+
+  const redirectRewards = () => {
+    navigate("/rewards");
+  };
+
+  const redirectActivities = () => {
+    navigate("/activities");
+  };
+
+  const redirectSearchFood = () => {
+    navigate("/searchfood");
+  };
+
+
   return (
     <div className={HomePageCSS.body}>
       <Navbar /> 
@@ -23,13 +44,13 @@ const HomePage = () => {
           </div>
           <div className={HomePageCSS.menu}>
             <div className={HomePageCSS.firstRow}>
-              <BarChartIcon className={HomePageCSS.icon} fontSize="large"></BarChartIcon>
+              <BarChartIcon className={HomePageCSS.icon} fontSize="large" onClick={redirectStats}></BarChartIcon>
               {/* <span>&emsp; &emsp; &emsp;</span> */}
-              <FitnessCenterIcon className={HomePageCSS.icon} fontSize="large"></FitnessCenterIcon> 
+              <FitnessCenterIcon className={HomePageCSS.icon} fontSize="large" onClick={redirectActivities}></FitnessCenterIcon> 
             </div>
             <div className={HomePageCSS.secondRow}>
-              <RamenDiningIcon className={HomePageCSS.icon} fontSize="large"></RamenDiningIcon>
-              <EmojiEventsIcon className={HomePageCSS.icon} fontSize="large"></EmojiEventsIcon>
+              <RamenDiningIcon className={HomePageCSS.icon} fontSize="large" onClick={redirectSearchFood}></RamenDiningIcon>
+              <EmojiEventsIcon className={HomePageCSS.icon} fontSize="large" onClick={redirectRewards}></EmojiEventsIcon>
             </div>
           </div>
           
