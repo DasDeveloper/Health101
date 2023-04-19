@@ -16,6 +16,7 @@ import AddCustomActivity from "./components/AddCustomActivity";
 import DietSearchPage from "./components/dietSearch";
 import ChangeMinimumCalories from "./components/changeMinimumCalories";
 import CustomFood from "./components/customFood";
+import Account from "./components/account";
 
 
 
@@ -48,6 +49,15 @@ function App() {
             element={
               <>
                 <Navbar /> <Settings /> <Footer />
+              </>
+            }
+          ></Route>
+
+          <Route
+            path="/account"
+            element={
+              <>
+                <Navbar /> <Account /> <Footer />
               </>
             }
           ></Route>
