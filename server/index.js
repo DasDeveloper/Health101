@@ -40,7 +40,7 @@ app.use(
 
 app.use(
     cors({
-        origin: "http://localhost:3000",
+        origin: "https://health101-frontend.vercel.app",
         credentials: true,
     })
 );
