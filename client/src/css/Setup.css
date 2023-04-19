@@ -1,0 +1,79 @@
+
+  
+  body {
+    background-color: white;
+  }
+
+  .maincontainer{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .containerText{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    align-items: center;
+    border-radius: 10px;
+    background: #ffff;
+    padding:1px;
+    width: 90%;
+    height: 100%;
+    box-shadow: 5px 5px 5px 5px gray;
+  }
+
+  h1 {
+    text-align: center;  
+  }
+  
+  .inputSetup{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    height: 5vh;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    margin: auto;
+    width: 90%;
+    color: #bbbbbb;
+}
+  
+
+   .buttonNext {
+    height: 60px;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 50px;
+    background: linear-gradient(320deg, rgba(255,255,255,1) 0%, rgba(174,239,151,1) 50%, rgba(198,232,128,1) 100%);
+    border-radius: 20px;
+    border-style: none;
+    transition: 0.3s;
+    min-width: calc(100px + 1vw);
+    transform: scale();
+  }
+  .defaultbox{
+    width: 100%;
+  }
+
+  .step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;  
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+  }
+  
+  .stepActive {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;  
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 2;
+  }
+

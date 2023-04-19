@@ -17,6 +17,9 @@ import DietSearchPage from "./components/dietSearch";
 import ChangeMinimumCalories from "./components/changeMinimumCalories";
 import CustomFood from "./components/customFood";
 import Account from "./components/account";
+import Setup from "./components/Setup"
+import Setup2 from "./components/Setup2"
+import Setup3 from "./components/Setup3"
 
 
 
@@ -152,6 +155,30 @@ function App() {
             element={
               <>
                 <Navbar/><ChangeMinimumCalories/><Footer/>
+              </>
+            }
+          ></Route>
+          <Route
+            path="/Setup"
+            element={
+              <>
+                <Navbar /> <Setup/>
+              </>
+            }
+          ></Route>
+            <Route
+            path="/Setup2"
+            element={
+              <>
+                <Navbar /> <Setup2/>
+              </>
+            }
+          ></Route>
+           <Route
+            path="/Setup3"
+            element={
+              <>
+                <Navbar /> <Setup3/>
               </>
             }
           ></Route>
