@@ -8,6 +8,20 @@ import { useNavigate } from "react-router-dom";
 const Footer = () =>{
 
   const navigate = useNavigate();
+
+
+  const navigateToAccountPage = () =>{
+    navigate("/account")
+  }
+
+  const navigateToSettings = () =>{
+    navigate("/settings")
+  }
+  const navigateToHomePage = () =>{
+    navigate("/")
+  }
+
+
   
   const redirectHomePage = () => {
     navigate("/");
@@ -20,6 +34,7 @@ const Footer = () =>{
   const redirectAccount = () => {
     navigate("/changeminimumcalories");
   };
+
 
 
 
