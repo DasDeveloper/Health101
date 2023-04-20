@@ -42,7 +42,7 @@ dotenv.config();
 
 app.use(
     cors({
-        origin: "https://health101.vercel.app",
+        origin: "https://health101-frontend.vercel.app/",
         credentials: true,
     })
 );
