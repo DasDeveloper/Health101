@@ -3,8 +3,10 @@ const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 const session = require("express-session");
 const cors = require("cors");
+
 // const User = require("./models/user");
 // const MongoDBStore = require("connect-mongodb-session")(session);
+
 
 const app = express();
 app.use(express.json());
@@ -40,7 +42,7 @@ dotenv.config();
 
 app.use(
     cors({
-        origin: "http://localhost:3000",
+        origin: "https://health101.vercel.app",
         credentials: true,
     })
 );
@@ -68,6 +70,7 @@ res.send("Hello World!");
 //Routes for our API endpoints
 // app.use("/users", require("./routes/userRoutes.js"));
 // app.use("/session", require("./routes/sessionRoutes.js"));
+
 app.use("/food", require("./routes/caloriesRoutes.js"))
 //Running the server
 const server = app.listen(port, () => {
