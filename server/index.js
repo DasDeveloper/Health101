@@ -17,7 +17,7 @@ dotenv.config();
 // const session_length = 1000 * 60 * 60;
 
 // //Set proxy
-// app.set("trust proxy", 1);
+app.set("trust proxy", 1);
 
 //MongoDB seission store
 // const mongoDBstore = new MongoDBStore({
@@ -39,6 +39,15 @@ dotenv.config();
 //         saveUninitialized: false,
 //     })
 // );
+
+const allowCrossDomain = (req, res, next) => {
+  res.header(`Access-Control-Allow-Origin`, `example.com`);
+  res.header(`Access-Control-Allow-Methods`, `GET,PUT,POST,DELETE`);
+  res.header(`Access-Control-Allow-Headers`, `Content-Type`);
+  next();
+};
+
+app.use(allowCrossDomain);
 
 app.use(
     cors({
