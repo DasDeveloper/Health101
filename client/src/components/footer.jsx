@@ -32,7 +32,7 @@ const Footer = () =>{
   };
 
   const redirectAccount = () => {
-    navigate("/changeminimumcalories");
+    navigate("/account");
   };
 
 
