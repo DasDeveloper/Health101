@@ -3,7 +3,10 @@ const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 const session = require("express-session");
 const cors = require("cors");
-const MongoDBStore = require("connect-mongodb-session")(session);
+
+// const User = require("./models/user");
+// const MongoDBStore = require("connect-mongodb-session")(session);
+
 
 const app = express();
 app.use(express.json());
@@ -11,7 +14,7 @@ const port = 9000;
 dotenv.config();
 
 //Session length
-const session_length = 1000 * 60 * 60;
+// const session_length = 1000 * 60 * 60;
 
 // //Set proxy
 // app.set("trust proxy", 1);
@@ -65,7 +68,9 @@ res.send("Hello World!");
 });
 
 //Routes for our API endpoints
-app.use("/session", require("./routes/sessionRoutes.js"));
+// app.use("/users", require("./routes/userRoutes.js"));
+// app.use("/session", require("./routes/sessionRoutes.js"));
+
 app.use("/food", require("./routes/caloriesRoutes.js"))
 //Running the server
 const server = app.listen(port, () => {
