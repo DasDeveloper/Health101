@@ -1,16 +1,22 @@
 import axios from 'axios'
-import { useEffect, useState } from "react";
-import "../css/searchFood.css"
-import SearchIcon from '@mui/icons-material/Search';
+import {useState } from "react";
+import "../css/searchFood.css";
+import { useNavigate } from 'react-router-dom';
+
 
 const SearchFood = () =>{
   const [food, setFood] = useState([]);
   const [result, setResult] = useState([]);
+  const navigate = useNavigate();
 
   const getFood = async () =>{
     const response = await axios.get(`http://localhost:9000/food/${food}`); 
     console.log(response.data)
     setResult(response.data)
+  }
+
+  const redirectToCustomFood = () =>{
+      navigate("/customfood")
   }
 
   return (
@@ -37,6 +43,7 @@ const SearchFood = () =>{
           </div>):
           (<></>)}
         </div> 
+        <button className="searchButton" onClick={redirectToCustomFood}>Add custom food</button>
       </div>
     </div>
   )
