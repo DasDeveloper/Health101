@@ -7,6 +7,8 @@ import RemoveIcon from '@mui/icons-material/Remove';
 import axios from "axios";
 import swal from "sweetalert";
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import { useNavigate } from "react-router-dom";
+
 
 const CustomFood = () => {
 
@@ -15,6 +17,12 @@ const CustomFood = () => {
     name: "",
     weight: ""
   });
+
+  const navigate = useNavigate();
+  
+  const redirectSearchPage = () => {
+    navigate("/searchfood");
+  };
 
   const addFood = async() => {
     await axios.post(`http://localhost:9000/food/foodName`, {
@@ -84,7 +92,7 @@ const CustomFood = () => {
             </div>       
           </div>
           <div className={CustomFoodCSS.nav}>
-            <button className={CustomFoodCSS.buttonBack} onClick={addFood}><ArrowBackIcon fontSize="large"></ArrowBackIcon></button>
+            <button className={CustomFoodCSS.buttonBack} onClick={redirectSearchPage}><ArrowBackIcon fontSize="large"></ArrowBackIcon></button>
             <button className={CustomFoodCSS.buttonAdd} onClick={addFood}><AddIcon fontSize="large"></AddIcon></button>
           </div>
           <div className={CustomFoodCSS.navTitle}>
