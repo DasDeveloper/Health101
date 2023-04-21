@@ -4,8 +4,6 @@ const dotenv = require("dotenv");
 const session = require("express-session");
 const cors = require("cors");
 
-// const User = require("./models/user");
-// const MongoDBStore = require("connect-mongodb-session")(session);
 
 
 const app = express();
@@ -13,45 +11,15 @@ app.use(express.json());
 const port = 9000;
 dotenv.config();
 
-//Session length
-// const session_length = 1000 * 60 * 60;
+
 
 // //Set proxy
 app.set("trust proxy", 1);
 
-//MongoDB seission store
-// const mongoDBstore = new MongoDBStore({
-//     uri: process.env.DATABASE,
-//     collection: "userSessions",
-// });
-
-// app.use(
-//     session({
-//         secret: "secret123",
-//         name: "user_session_id",
-//         store: mongoDBstore,
-//         cookie: {
-//             maxAge: session_length,
-//             sameSite: false,
-//             secure: true,
-//         },
-//         resave: true,
-//         saveUninitialized: false,
-//     })
-// );
-
-const allowCrossDomain = (req, res, next) => {
-  res.header(`Access-Control-Allow-Origin`, `https://health101-frontend.vercel.app`);
-  res.header(`Access-Control-Allow-Methods`, `GET,PUT,POST,DELETE`);
-  res.header(`Access-Control-Allow-Headers`, `Content-Type`);
-  next();
-};
-
-app.use(allowCrossDomain);
 
 app.use(
     cors({
-        origin: "https://health101-frontend.vercel.app",
+        origin: "http://localhost:3000",
         credentials: true,
     })
 );

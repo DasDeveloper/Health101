@@ -24,7 +24,7 @@ const NotificationPage = () => {
         </div>
       </div>
       <div className={NotificationCSS.bottom}>
-        <Link to="">
+        <Link to="/account">
           <div className={NotificationCSS.left}>
             <button className={NotificationCSS["button"]} id={NotificationCSS["back"]}>
               <ArrowBackIcon fontSize="large" />
