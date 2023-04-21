@@ -35,6 +35,7 @@ const Setup3= () => {
     <div className="defaultBox">    
     <span class="step"></span>
     <span class="step"></span>
+    <span class="step"></span>
     <span class="stepActive"></span>
     </div>  
 

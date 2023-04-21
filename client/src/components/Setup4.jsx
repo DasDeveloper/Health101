@@ -7,18 +7,18 @@ import "../css/Setup.css";
 
   
 
-const Setup2= () => {
+const Setup4 = () => {
     return(
     <div className="maincontainer">
            <h2>
-            WELCOME
+            Next
         </h2>
     <div className="containerText">
         <h3>
-        We will also  need :
+        To start things we will need 
         </h3>
         <h5  >
-        Your Height:
+        Your Username:
         </h5>
         <TextField
           required
@@ -27,7 +27,7 @@ const Setup2= () => {
           variant="filled"
         />
     <h5  >
-       Your Weight:
+    Your Password:
         </h5>
         <TextField
           required
@@ -35,16 +35,15 @@ const Setup2= () => {
           //helperText="Male"
           variant="filled"
         />
-     <Link to="/Setup4"> 
+     <Link to="/Setup3"> 
     <button className="buttonNext">
     Next
     </button>
     </Link>
-
     <div className="defaultBox">    
     <span class="step"></span>
-    <span class="stepActive"></span>
     <span class="step"></span>
+    <span class="stepActive"></span>
     <span class="step"></span>
     </div>  
 
@@ -55,4 +54,4 @@ const Setup2= () => {
 );
 }
 
-export default Setup2 ;
+export default Setup4;
