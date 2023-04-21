@@ -11,11 +11,11 @@ const Setup4 = () => {
     return(
     <div className="maincontainer">
            <h2>
-            Next
+            Welcome
         </h2>
     <div className="containerText">
         <h3>
-        To start things we will need 
+        Next we need
         </h3>
         <h5  >
         Your Username:
