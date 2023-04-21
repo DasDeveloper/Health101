@@ -50,9 +50,9 @@ const SetupSettings= () => {
           variant="filled"
         />
     <div>
-       <h5>
+
         Access to your outside app data
-    </h5> 
+   
     <Switch label="Access to your outside app data" defaultChecked />
     </div>    
     

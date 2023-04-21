@@ -187,7 +187,7 @@ function App() {
             path="/SetupSettings"
             element={
               <>
-                <Navbar /><SetupSettings/>
+                <Navbar /><SetupSettings/><Footer />
               </>
             }
           ></Route>
