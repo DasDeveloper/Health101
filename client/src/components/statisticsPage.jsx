@@ -1,6 +1,7 @@
 import Navbar from "./navbar";
 import Footer from "./footer";
 import StatisticsPageCSS from "../css/statisticspage.module.css";
+import statsImage from '../images/image.png';
 
 const StatisticsPage = () => {
   return (
@@ -10,7 +11,7 @@ const StatisticsPage = () => {
 
         <h1 style={{textAlign:"center", marginBottom: 0}}>Annual Report</h1>
         <div className={StatisticsPageCSS.imageContainer}>
-          <img className={StatisticsPageCSS.image} src="https://cdn1.byjus.com/wp-content/uploads/2021/03/bar-graph.png"
+          <img className={StatisticsPageCSS.image} src={statsImage}
           alt="This is a stat image"/>
         </div>
         
