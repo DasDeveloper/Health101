@@ -44,13 +44,13 @@ const HomePage = () => {
           </div>
           <div className={HomePageCSS.menu}>
             <div className={HomePageCSS.firstRow}>
-              <BarChartIcon className={HomePageCSS.icon} fontSize="large" onClick={redirectStats}></BarChartIcon>
+            <div className={HomePageCSS.navname}><BarChartIcon className={HomePageCSS.icon} fontSize="large" onClick={redirectStats}></BarChartIcon><h4>Statistics</h4></div>
               {/* <span>&emsp; &emsp; &emsp;</span> */}
-              <FitnessCenterIcon className={HomePageCSS.icon} fontSize="large" onClick={redirectActivities}></FitnessCenterIcon> 
+              <div className={HomePageCSS.navname}><FitnessCenterIcon className={HomePageCSS.icon} fontSize="large" onClick={redirectActivities}></FitnessCenterIcon><h4>Activities</h4></div> 
             </div>
             <div className={HomePageCSS.secondRow}>
-              <RamenDiningIcon className={HomePageCSS.icon} fontSize="large" onClick={redirectSearchFood}></RamenDiningIcon>
-              <EmojiEventsIcon className={HomePageCSS.icon} fontSize="large" onClick={redirectRewards}></EmojiEventsIcon>
+            <div className={HomePageCSS.navname}><RamenDiningIcon className={HomePageCSS.icon} fontSize="large" onClick={redirectSearchFood}></RamenDiningIcon><h4>Add Meal</h4></div>
+            <div className={HomePageCSS.navname}><EmojiEventsIcon className={HomePageCSS.icon} fontSize="large" onClick={redirectRewards}></EmojiEventsIcon><h4>Rewards</h4></div>
             </div>
           </div>
           

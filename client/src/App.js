@@ -20,7 +20,8 @@ import Account from "./components/account";
 import Setup from "./components/Setup"
 import Setup2 from "./components/Setup2"
 import Setup3 from "./components/Setup3"
-
+import SetupSettings from "./components/SetupSettings"
+import Setup4 from "./components/Setup4";
 
 
 function App() {
@@ -179,6 +180,22 @@ function App() {
             element={
               <>
                 <Navbar /> <Setup3/>
+              </>
+            }
+          ></Route>
+           <Route
+            path="/SetupSettings"
+            element={
+              <>
+                <Navbar /><SetupSettings/><Footer />
+              </>
+            }
+          ></Route>
+                     <Route
+            path="/Setup4"
+            element={
+              <>
+                <Navbar /> <Setup4/>
               </>
             }
           ></Route>
