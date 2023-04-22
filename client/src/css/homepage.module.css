@@ -54,3 +54,8 @@
   align-content: space-between;
   justify-content: space-evenly
 }
+.navname{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}

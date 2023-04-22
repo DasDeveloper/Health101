@@ -44,6 +44,7 @@ const Setup= () => {
     <span class="stepActive"></span>
     <span class="step"></span>
     <span class="step"></span>
+    <span class="step"></span>
     </div>  
 
     </div>

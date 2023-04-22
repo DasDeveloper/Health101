@@ -41,9 +41,9 @@ const Footer = () =>{
 
   return (
     <div className={FooterCSS.footer}>
-      <AccountCircleIcon className={FooterCSS.icon} fontSize="large" onClick={redirectAccount}></AccountCircleIcon>
-      <HomeIcon className={FooterCSS.icon} fontSize="large" onClick={redirectHomePage}></HomeIcon>
-      <SettingsIcon className={FooterCSS.icon} fontSize="large" onClick={redirectSettings}></SettingsIcon>
+      <div className={FooterCSS.navname}><AccountCircleIcon className={FooterCSS.icon} fontSize="large" onClick={redirectAccount}></AccountCircleIcon>Profile</div> 
+      <div className={FooterCSS.navname}><HomeIcon className={FooterCSS.icon} fontSize="large" onClick={redirectHomePage}></HomeIcon>Home</div>
+      <div className={FooterCSS.navname}><SettingsIcon className={FooterCSS.icon} fontSize="large" onClick={redirectSettings}></SettingsIcon>Settings</div>
     </div>
   );
 }
