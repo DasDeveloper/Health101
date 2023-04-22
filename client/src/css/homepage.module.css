@@ -59,3 +59,21 @@
   flex-direction: column;
   align-items: center;
 }
+
+@media only screen and (min-width: 400px) {
+
+  .imageContainer{
+    height: auto;
+  }
+
+  .image {
+    padding-top: 25px;
+    width: 60dvh;
+    height: auto;
+  }
+
+  .menu {
+    margin-top: 150px;
+  }
+
+}
