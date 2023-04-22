@@ -1,5 +1,4 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import UserSession from "./UserSession";
 import Navbar from "./components/navbar";
 import SearchFood from "./components/searchFood";
 import Footer from "./components/footer";
@@ -26,8 +25,8 @@ import Setup4 from "./components/Setup4";
 
 function App() {
   return (
-    <UserSession>
-      {/* Link to pages using React Router DOM */}
+  
+      
       <BrowserRouter>
         <Routes>
           <Route
@@ -201,7 +200,7 @@ function App() {
           ></Route>
         </Routes>
       </BrowserRouter>
-    </UserSession>
+   
   );
 }
 
