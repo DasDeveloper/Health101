@@ -49,8 +49,8 @@ const HomePage = () => {
               <div className={HomePageCSS.navname}><FitnessCenterIcon className={HomePageCSS.icon} fontSize="large" onClick={redirectActivities}></FitnessCenterIcon><h4>Activities</h4></div> 
             </div>
             <div className={HomePageCSS.secondRow}>
-            <div className={HomePageCSS.navname}><RamenDiningIcon className={HomePageCSS.icon} fontSize="large" onClick={redirectSearchFood}></RamenDiningIcon><h4>Rewards</h4></div>
-            <div className={HomePageCSS.navname}><EmojiEventsIcon className={HomePageCSS.icon} fontSize="large" onClick={redirectRewards}></EmojiEventsIcon><h4>Add Meal</h4></div>
+            <div className={HomePageCSS.navname}><RamenDiningIcon className={HomePageCSS.icon} fontSize="large" onClick={redirectSearchFood}></RamenDiningIcon><h4>Add Meal</h4></div>
+            <div className={HomePageCSS.navname}><EmojiEventsIcon className={HomePageCSS.icon} fontSize="large" onClick={redirectRewards}></EmojiEventsIcon><h4>Rewards</h4></div>
             </div>
           </div>
           
